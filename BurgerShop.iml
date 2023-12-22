@@ -40,5 +40,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="io.cucumber.java" level="project" />
+    <orderEntry type="library" name="io.cucumber.junit" level="project" />
   </component>
 </module>
