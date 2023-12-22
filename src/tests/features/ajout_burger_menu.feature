@@ -4,7 +4,7 @@ Feature: Ajout de Burgers au Menu
   Je veux pouvoir ajouter des burgers préparés au menu
 
   Scenario: Ajouter un burger au menu
-    Given un burger avec 2 cornichons et la sauce "BBQ"
+    Given un burger avec 2 cornichons et la sauce "BBQ" pour un test de menu
     Given un menu existant
     When j'ajoute le burger au menu
     Then le menu doit contenir le burger avec 2 cornichons et la sauce "BBQ"

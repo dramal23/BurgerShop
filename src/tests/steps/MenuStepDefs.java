@@ -14,8 +14,8 @@ public class MenuStepDefs {
     private Burger burger;
     private Menu menu;
 
-    @Given("un burger avec {int} cornichons et la sauce {string}")
-    public void unBurgerAvecCornichonsEtLaSauce(int nombreCornichons, String nouvelleSauce) {
+    @Given("un burger avec {int} cornichons et la sauce {string} pour un test de menu")
+    public void unBurgerAvecCornichonsEtLaSaucePourUnTestDeMenu(int nombreCornichons, String nouvelleSauce) {
         burger = new Burger();
         burger.creerChefDoeuvre(nombreCornichons, nouvelleSauce);
     }
