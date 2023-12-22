@@ -20,6 +20,11 @@ public class MenuStepDefs {
         burger.creerChefDoeuvre(nombreCornichons, nouvelleSauce);
     }
 
+    @Given("un menu existant")
+    public void unMenuExistant() {
+        menu = new Menu();
+    }
+
     @When("j'ajoute le burger au menu")
     public void jAjouteLeBurgerAuMenu() {
         menu.setBurgerInMenu(burger);
