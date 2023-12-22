@@ -9,11 +9,11 @@ Feature: Préparation des burgers
     Then le burger doit contenir 3 cornichons et la sauce "Ketchup"
 
   Scenario: Changer la sauce du burger
-    Given un burger avec 2 cornichons et la sauce "Moutarde"
+    Given un burger avec 2 cornichons et la sauce "Moutarde" pour un test de burger
     When je change la sauce en "Mayonnaise"
     Then le burger doit contenir 2 cornichons et la sauce "Mayonnaise"
 
   Scenario: Réinitialiser la composition du burger
-    Given un burger avec 4 cornichons et la sauce "Barbecue"
+    Given un burger avec 4 cornichons et la sauce "Barbecue" pour un test de burger
     When je réinitialise le burger
     Then le burger doit être sans garniture
