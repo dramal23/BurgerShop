@@ -19,6 +19,15 @@ public class Burger {
         return this.cornichons;
     }
 
+    public void setCornichons(int cornichons) {
+        this.cornichons = cornichons;
+    }
+
+    public void setNomSauce(String nomSauce) {
+        this.nomSauce = nomSauce;
+    }
+
+
     public String getNomSauce() {
         return this.nomSauce;
     }
