@@ -8,4 +8,6 @@ import org.junit.runner.RunWith;
         glue = "",                            // Chemin vers le package contenant les Step Definitions
         plugin = {"pretty", "html:target/cucumber-reports"} // Report HTML généré dans le répertoire target/cucumber-reports
 )
-public class RunCucumberTest {}
+public class RunCucumberTest {
+    // Pas besoin de code
+}
