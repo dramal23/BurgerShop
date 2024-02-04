@@ -5,11 +5,18 @@ import java.util.List;
 
 public class DestinationObserver {
     private final List<Client> clients;
+    private static DestinationObserver instance;
 
     public DestinationObserver() {
         this.clients = new ArrayList<>();
     }
 
+    public static DestinationObserver getInstance() {
+        if (instance == null) {
+            instance = new DestinationObserver();
+        }
+        return instance;
+    }
     public void addObserver(Client client) {
         clients.add(client);
     }

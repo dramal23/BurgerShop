@@ -8,6 +8,10 @@ public class Client {
         this.nom = nom;
         this.destination = null;
     }
+    public Client(String nomm, Destination destination) {
+        this.nom = nom;
+        this.destination = destination;
+    }
 
     public Destination getDestination() {
         return destination;
