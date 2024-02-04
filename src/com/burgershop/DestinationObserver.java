@@ -18,10 +18,12 @@ public class DestinationObserver {
         clients.remove(client);
     }
 
-    public void notifyClients(Burger burger) {
+    public List<String> notifyClients(Burger burger) {
+        List<String> notifications = new ArrayList<>();
         for (Client client : clients) {
-            // pas une bonne pratique de system out, mais pas envie de modifier les classes fétiches
-            System.out.println("Le client vient d'être notifié de l'arrivée de " + burger.getDescription());
+            String notification = "Le client vient d'être notifié de l'arrivée de " + burger.getDescription();
+            notifications.add(notification);
         }
+        return notifications;
     }
 }
